@@ -1,38 +1,7 @@
 import React, { useState } from "react";
 import "./todo.css";
-
-function CustomButton(props) {
-  const { color, onClick, children } = props;
-  if (color) {
-    return (
-      <button
-        style={{ backgroundColor: color, color: "white" }}
-        onClick={onClick}
-      >
-        {children}
-      </button>
-    );
-  }
-  return <button onClick={onClick}>{children}</button>;
-}
-
-function Todo(props) {
-  return (
-    <div className="todo-style">
-      <div className="title">{props.todo.title}</div>
-      <br></br>
-      <div className="content">{props.todo.content}</div>
-      <CustomButton
-        color="red"
-        onClick={() => {
-          props.handleDelete(props.todo.id);
-        }}
-      >
-        삭제하기
-      </CustomButton>
-    </div>
-  );
-}
+import CustomButton from "./components/CustomButton";
+import Todo from "./components/Todo";
 
 const App = () => {
   const [todos, setTodos] = useState([
