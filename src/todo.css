@@ -1,0 +1,21 @@
+.app-style {
+  padding: 100px;
+  display: flex;
+  gap: 12px;
+}
+
+.todo-style {
+  width: 300px;
+  height: 150px;
+  border: 2px solid rgb(3, 114, 86);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
