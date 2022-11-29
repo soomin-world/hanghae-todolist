@@ -14,6 +14,12 @@ function Todo(props) {
       >
         삭제하기
       </CustomButton>
+      <CustomButton
+        color="blue"
+        onClick={() => props.handleDone(props.todo.id)}
+      >
+        {props.todo.isDone ? "취소" : "완료"}
+      </CustomButton>
     </div>
   );
 }
