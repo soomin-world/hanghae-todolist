@@ -1,12 +1,13 @@
+div {
+  display: block;
+}
+
 .layOut {
   margin: 0 auto;
   max-width: 1200px;
   min-width: 800px;
 }
 
-div {
-  display: block;
-}
 .app-style {
   padding: 100px;
   display: flex;

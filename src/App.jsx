@@ -22,6 +22,8 @@ const App = () => {
       isDone: false,
     };
     setTodos([...todos, newTodo]);
+    setTitle("");
+    setContent("");
     console.log(id);
   };
 
@@ -44,7 +46,7 @@ const App = () => {
           <div>My Todo List</div>
           <div>React</div>
         </div>
-        <form className="add-form">
+        <div className="add-form">
           <div className="input-group">
             <label className="form-label">제목</label>
             <input
@@ -60,7 +62,7 @@ const App = () => {
             />
           </div>
           <STButton onClick={addTodoHandler}>추가하기</STButton>
-        </form>
+        </div>
         <div className="list-container">
           <h2 className="list-title">Working..💥</h2>
           <div className="list-wrapper">
