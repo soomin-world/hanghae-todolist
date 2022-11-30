@@ -13,6 +13,7 @@ const App = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [id, setId] = useState(3);
+
   const addTodoHandler = () => {
     setId(id + 1);
     const newTodo = {
@@ -24,7 +25,7 @@ const App = () => {
     setTodos([...todos, newTodo]);
     setTitle("");
     setContent("");
-    console.log(id);
+    console.log(id); // id값 정상출력 확인 !!
   };
 
   const doneHandler = (id) => {
@@ -96,6 +97,7 @@ const App = () => {
   );
 };
 
+//style component 공부하기
 const STButton = styled.button`
   background-color: teal;
   border: none;
