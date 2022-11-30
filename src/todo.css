@@ -1,21 +1,97 @@
+.layOut {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
+}
+
+div {
+  display: block;
+}
 .app-style {
   padding: 100px;
   display: flex;
   gap: 12px;
 }
 
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .todo-style {
-  width: 300px;
-  height: 150px;
-  border: 2px solid rgb(3, 114, 86);
-  border-radius: 10px;
-  display: flex;
+  border: 4px solid teal;
+  border-radius: 12px;
+  padding: 12px 24px 24px;
+  width: 270px;
+}
+
+.nav-bar {
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  border: 1px solid #ddd;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.input-box {
+  border: none;
+  border-radius: 12px;
+  height: 40px;
+  padding: 0 12px;
+  width: 240px;
+}
+
+.add-form {
+  background-color: #eee;
+  border-radius: 12px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.input-group {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.list-container {
+  padding: 0 24px;
+}
+
+.list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.todo-container {
+  border: 4px solid teal;
+  border-radius: 12px;
+  padding: 12px 24px 24px;
+  width: 270px;
 }
 
 .title {
-  margin-bottom: 20px;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
 }
