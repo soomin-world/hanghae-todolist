@@ -77,19 +77,19 @@ const App = () => {
               ) : null
             )}
           </div>
-        </div>
-        <h2 className="list-title">Done..!🎉</h2>
-        <div className="app-style">
-          {todos.map((todo) =>
-            todo.isDone === true ? (
-              <Todo
-                handleDelete={deleteTodoHandler}
-                handleDone={doneHandler}
-                todo={todo}
-                key={todo.id}
-              ></Todo>
-            ) : null
-          )}
+          <h2 className="list-title">Done..!🎉</h2>
+          <div className="list-wrapper">
+            {todos.map((todo) =>
+              todo.isDone === true ? (
+                <Todo
+                  handleDelete={deleteTodoHandler}
+                  handleDone={doneHandler}
+                  todo={todo}
+                  key={todo.id}
+                ></Todo>
+              ) : null
+            )}
+          </div>
         </div>
       </div>
     </div>

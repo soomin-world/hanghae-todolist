@@ -64,10 +64,6 @@ h2 {
   gap: 20px;
 }
 
-.list-container {
-  padding: 0 24px;
-}
-
 .list-wrapper {
   display: flex;
   flex-wrap: wrap;
