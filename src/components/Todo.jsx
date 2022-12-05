@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import CustomButton from "./CustomButton";
 
 function Todo(props) {
   return (

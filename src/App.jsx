@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./todo.css";
-import CustomButton from "./components/CustomButton";
 import Todo from "./components/Todo";
 import styled from "styled-components";
 
